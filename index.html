@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>base</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <style>
+
+      .mu-popup{
+        background-color: rgba(0,0,0,.5) !important
+         }
+        .mu-popup-top{
+            top: 120px !important;
+            width: 4rem;
+            height: 2rem;
+            line-height:2rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .el-tabs .el-tabs-top{
+            width: 100%;
+           
+        }
+         .el-tabs__header{
+            width: 100%;
+            margin: 0px 0px!important;
+
+        }
+
+       .el-tabs__item{
+            width: 33.3%;
+            text-align: center;
+            color: #939393 !important;
+        }
+        .el-tabs__item.is-active{
+            color: #FC92B6 !important;
+        }
+
+        .el-tabs__nav{
+            width: 100%;
+        }
+        .el-tabs__active-bar{
+            background-color: #FF6B9D !important;
+        }
+      
+        .M-content .el-tabs__item{
+            width: 50%;
+            text-align: center;
+            color: #939393 !important;
+        }
+         .M-content  .el-tabs__item.is-active{
+            color: #FC92B6 !important;
+        }
+        .tabs .el-tabs__content{
+            padding-bottom: 80px;
+        }
+
+
+        
+    </style>
+    <script>
+    	// 750 -> 1rem = 50px   大于750 -> 1rem = 100px
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if(clientWidth>=750){
+                            docEl.style.fontSize = '100px';
+                        }else{
+                            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

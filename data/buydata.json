@@ -1,0 +1,36 @@
+// {
+//   "seller": {
+//       "name": "粥品香坊（回龙观）",
+//       "description": "蜂鸟专送",
+//       "bulletin": "会指定餐饮服务商。",
+//       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg",
+//   },
+//   "goods": [
+//       {
+//         "name": "热销榜",
+//         "type": -1
+//       },
+//       {
+//         "name": "热销榜",
+//         "type": -1
+//       }
+//   ],
+//   "ratings": [
+//     {
+//       "username": "3******c",
+//       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png",
+//       "recommend": [
+//         "南瓜粥",
+//         "皮蛋瘦肉粥"
+//       ]
+//     },
+//     {
+//       "username": "2******3",
+//       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png",
+//       "recommend": [
+//         "扁豆焖面"
+//       ]
+//     }
+//   ]
+// }
+
